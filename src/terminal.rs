@@ -13,7 +13,7 @@ use sark_grids::Grid;
 /// A single tile of the terminal.
 ///
 /// Defaults to a blank glyph with a black background and a white foreground.
-#[derive(Clone, Copy, Debug)]
+#[derive(Component, Clone, Copy, Debug)]
 pub struct Tile {
     /// The glyph for the tile. Glyphs are mapped to sprites via the
     /// terminal's [UvMapping](super::renderer::uv_mapping::UvMapping)
